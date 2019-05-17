@@ -74,9 +74,38 @@ $("#column2-button").click(function () {
 // });
 
 $("#column1-row1").mouseover(function () {
-    $("#pencil").css("visibility", "visible");
+    $("#pencil1").css("visibility", "visible");
 });
 $("#column1-row1").mouseout(function () {
-    $("#pencil").css("visibility", "hidden");
+    $("#pencil1").css("visibility", "hidden");
 });
-
+$("#column1-row2").mouseover(function () {
+    $("#pencil2").css("visibility", "visible");
+});
+$("#column1-row2").mouseout(function () {
+    $("#pencil2").css("visibility", "hidden");
+});
+$("#column1-row3").mouseover(function () {
+    $("#pencil3").css("visibility", "visible");
+});
+$("#column1-row3").mouseout(function () {
+    $("#pencil3").css("visibility", "hidden");
+});
+$("#column2-row1").mouseover(function () {
+    $("#pencil4").css("visibility", "visible");
+});
+$("#column2-row1").mouseout(function () {
+    $("#pencil4").css("visibility", "hidden");
+});
+$("#column2-row2").mouseover(function () {
+    $("#pencil5").css("visibility", "visible");
+});
+$("#column2-row2").mouseout(function () {
+    $("#pencil5").css("visibility", "hidden");
+});
+$("#column2-row3").mouseover(function () {
+    $("#pencil6").css("visibility", "visible");
+});
+$("#column2-row3").mouseout(function () {
+    $("#pencil6").css("visibility", "hidden");
+});

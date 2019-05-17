@@ -114,11 +114,44 @@
 #column1-row1:hover{
     background-color: rgba(101, 177, 61, 0.1);
 }
-#pencil {
+#pencil1 {
     color: green;
     display: inline-block;
     position: relative;
     left: 95px;
+}
+#pencil2 {
+    color: green;
+    display: inline-block;
+    position: relative;
+    left: 135px;
+}
+#pencil3 {
+    color: green;
+    display: inline-block;
+    position: relative;
+    left: 135px;
+}
+#pencil4 {
+    color: green;
+    display: inline-block;
+    position: relative;
+    left: 185px;
+    bottom: 15px;
+}
+#pencil5 {
+    color: green;
+    display: inline-block;
+    position: relative;
+    left: 185px;
+    bottom: 15px;
+}
+#pencil6 {
+    color: green;
+    display: inline-block;
+    position: relative;
+    left: 185px;
+    bottom: 15px;
 }
 .column1-row1-active {
     background-color: #EFF7EB;
