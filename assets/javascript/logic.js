@@ -59,20 +59,8 @@ $("#column2-button").click(function () {
     }
 });
 
-//Series of jQuery commands that activate after clicking the "#column1-row1" element. Designed
-//to display a pencil icon depending on the user interaction
-// $("#column1-row1").click(function(){
-//     $("#column1-row1").addClass("column1-row1-active");
-//     if(column1Row1Click === false){
-//         $("#pencil").css("visibility", "visible");
-//         column1Row1Click = true;
-//     }
-//     else if(column1Row1Click === true){
-//         $("#pencil").css("visibility", "hidden");
-//         column1Row1Click = false;
-//     }
-// });
-
+//Series of jQuery commands that activate after hovering over the different column rows.
+// Designed to display a pencil icon depending on the user interaction
 $("#column1-row1").mouseover(function () {
     $("#pencil1").css("visibility", "visible");
 });

@@ -513,6 +513,20 @@
         bottom: 30px;
         width: 250px;
     }
+    #column1-button {
+        position: relative;
+        top: 120px;
+    }
+    #column1-row2{
+        position: relative;
+        left: 0px;
+        top: 35px;
+    }    
+    #column1-row3{
+        position: relative;
+        left: 0px;
+        top: 35px;
+    }
     #column2-row1{
         position: relative;
         left: 0px;
@@ -521,12 +535,12 @@
     #column2-row2{
         position: relative;
         left: 0px;
-        top: -95px;
+        top: -65px;
     }
     #column2-row3{
         position: relative;
         left: 0px;
-        top: -55px;
+        top: -65px;
     }
     #column2-button {
         position: relative;
