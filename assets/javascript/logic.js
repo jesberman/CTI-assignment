@@ -2,6 +2,9 @@
 var buttonTwoClick = false;
 var buttonThreeClick = false;
 var buttonFourClick = false;
+var buttonFiveClick = false;
+var buttonSixClick = false;
+var buttonSevenClick = false;
 
 var column1Row1Click = false;
 
@@ -95,6 +98,38 @@ $("#column1-row3").click(function(){
     }
 })
 
+$("#column2-row1").click(function(){
+    if (buttonFiveClick === false) {
+        $("#column2-row1-text2").html("<input id='column2-row1-input' style='width:110px; height: 22px; position: relative; top:-5px; right: 10px;' type='text' name='firstname' placeholder='Value'><i id='column1-row2-x' class='fa fa-times' aria-hidden='true'></i>");
+        buttonFiveClick = true;
+    }
+    else if (buttonFiveClick === true) {
+        $("#column2-row1-text2").html("<p>Value</p>");
+        buttonFiveClick = false;
+    }
+})
+
+$("#column2-row2").click(function(){
+    if (buttonSixClick === false) {
+        $("#column2-row2-text2").html("<input id='column2-row2-input' style='width:110px; height: 22px; position: relative; top:-5px; right: 10px;' type='text' name='firstname' placeholder='Value'><i id='column1-row2-x' class='fa fa-times' aria-hidden='true'></i>");
+        buttonSixClick = true;
+    }
+    else if (buttonSixClick === true) {
+        $("#column2-row2-text2").html("<p>Value</p>");
+        buttonSixClick = false;
+    }
+})
+
+$("#column2-row3").click(function(){
+    if (buttonSevenClick === false) {
+        $("#column2-row3-text2").html("<input id='column2-row3-input' style='width:110px; height: 22px; position: relative; top:0px; right: 10px;' type='text' name='firstname' placeholder='Value'><i id='column1-row2-x' class='fa fa-times' aria-hidden='true'></i>");
+        buttonSevenClick = true;
+    }
+    else if (buttonSevenClick === true) {
+        $("#column2-row3-text2").html("<p>Value</p>");
+        buttonSevenClick = false;
+    }
+})
 //Series of jQuery commands that activate after hovering over the different column rows.
 // Designed to display a pencil icon depending on the user interaction
 $("#column1-row1").mouseover(function () {
