@@ -1,5 +1,8 @@
 //Global variables used later in the code to add functionality
 var buttonTwoClick = false;
+var buttonThreeClick = false;
+var buttonFourClick = false;
+
 var column1Row1Click = false;
 
 //Series of jQuery commands that activate after clicking the "#column1-button"
@@ -59,6 +62,39 @@ $("#column2-button").click(function () {
     }
 });
 
+$("#column1-row1").click(function(){
+    if (buttonTwoClick === false) {
+        $("#column1-row1-text2").html("<input id='column1-row1-input' style='height: 6px; position: relative; top:0px;' type='text' name='firstname' placeholder='First Value I'><i id='column1-row1-x' class='fa fa-times' aria-hidden='true'></i>");
+        buttonTwoClick = true;
+    }
+    else if (buttonTwoClick === true) {
+        $("#column1-row1-text2").html("<p>First value</p>");
+        buttonTwoClick = false;
+    }
+})
+
+$("#column1-row2").click(function(){
+    if (buttonThreeClick === false) {
+        $("#column1-row2-text2").html("<input id='column1-row2-input' style='width:110px; height: 22px; position: relative; top:-5px; right: 10px;' type='text' name='firstname' placeholder='Value'><i id='column1-row2-x' class='fa fa-times' aria-hidden='true'></i>");
+        buttonThreeClick = true;
+    }
+    else if (buttonThreeClick === true) {
+        $("#column1-row2-text2").html("<p>Value</p>");
+        buttonThreeClick = false;
+    }
+})
+
+$("#column1-row3").click(function(){
+    if (buttonFourClick === false) {
+        $("#column1-row3-text2").html("<input id='column1-row3-input' style='width:110px; height: 22px; position: relative; top:-5px; right: 10px;' type='text' name='firstname' placeholder='Value'><i id='column1-row2-x' class='fa fa-times' aria-hidden='true'></i>");
+        buttonFourClick = true;
+    }
+    else if (buttonFourClick === true) {
+        $("#column1-row3-text2").html("<p>Value</p>");
+        buttonFourClick = false;
+    }
+})
+
 //Series of jQuery commands that activate after hovering over the different column rows.
 // Designed to display a pencil icon depending on the user interaction
 $("#column1-row1").mouseover(function () {
@@ -97,3 +133,8 @@ $("#column2-row3").mouseover(function () {
 $("#column2-row3").mouseout(function () {
     $("#pencil6").css("visibility", "hidden");
 });
+
+
+$("#column1-row1-input").click(function(event){
+    event.preventDefault();
+  });
