@@ -16,12 +16,23 @@
 
 .popper-inactive {
     display: none;
+    font-size: 35px;
+}
+#popper-arrow{
+    display: inline-block;
+    margin-right: 10px;
+    color: rgba(101, 177, 61, 1);
+    width: 200px;
+    font-size: 30px;
 }
 
 #popper-title {
     font-family: 'Roboto Condensed',Light;
     font-size: 50px;
     color: #707070;
+    display: inline-block;
+    position: relative;
+    right: 100px;
 }
 
 #popper-x {
@@ -29,6 +40,8 @@
     bottom: 30px; 
     float: right;
     cursor: pointer;
+    position: relative;
+    top: 20px;
 }
 
 #popper-text {
@@ -182,6 +195,8 @@
     left: 0px; 
     display: inline-block; 
     float: right;
+    color: rgba(101, 177, 61, 1);
+
 }
 
 #column1-row3 {
@@ -199,6 +214,8 @@
 #column1-row3-text2 {
     display: inline-block; 
     float: right;
+    color: rgba(101, 177, 61, 1);
+
 }
 
 #column1-button {
@@ -238,6 +255,7 @@
     bottom: 15px; 
     display: inline-block; 
     float: right;
+    color: rgba(101, 177, 61, 1);
 }
 
 #column2-row2 {
@@ -258,6 +276,8 @@
     bottom: 15px; 
     display: inline-block; 
     float: right;
+    color: rgba(101, 177, 61, 1);
+
 }
 
 #column2-row3 {
@@ -277,6 +297,8 @@
     bottom: 15px; 
     display: inline-block; 
     float: right;
+    color: rgba(101, 177, 61, 1);
+
 }
 
 #column2-button {
@@ -288,7 +310,12 @@
     border-radius: 10px;
     border: none;
 }
-
+.column1-button-active {
+    background-color: white;
+}
+.column1-button-inactive {
+    background-color: #999999;
+}
 .column2-button-active {
     background-color: rgba(101, 177, 61, 1);
 }
@@ -307,6 +334,9 @@
 
 
 @media screen and (min-width: 1200px) {
+    #popper-arrow{
+        visibility: hidden;
+    }
     #column1-row2 {
         position: relative;
         left: 600px;
@@ -337,13 +367,31 @@
         left: 330px;
     }
 }
-
+@media screen and (max-width: 1200px) {
+    #popper-arrow{
+        visibility: hidden;
+    }
+}
 @media screen and (max-width: 950px) {
+
+    #sidebar {
+        width: 10px;
+    
+    }
+    #popper-arrow{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 850px) {
     #main-window {
-        width: 900px;
+        width: 850px;
     }
     #sidebar {
         width: 10px;
+    }
+    #popper-arrow{
+        visibility: hidden;
     }
     #main-window {
         position: absolute;
@@ -390,15 +438,73 @@
     #main-window {
         width: 768px;
     }
+    #popper-arrow{
+        visibility: hidden;
+    }
 }
 @media screen and (max-width: 425px) {
     #main-window {
         width: 425px;
     }
+    #popper-arrow{
+        visibility: visible;
+    }
+    #popper{
+        width: 205px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 800px;
+    }
+    #popper-x {
+        display: none;
+    }
+    #popper-arrow{
+        position: relative;
+        top: 50px;
+    }
+    #popper-title{
+        position: relative;
+        left: 50px;
+    }
+    #popper-button1{
+        position: relative;
+        width: 250px;
+        right: 35px;
+    }
+    #popper-button2{
+        position: relative;
+        right: 35px;
+        bottom: 30px;
+        width: 250px;
+    }
+    #column2-row1{
+        position: relative;
+        left: 0px;
+        top: -135px;
+    }
+    #column2-row2{
+        position: relative;
+        left: 0px;
+        top: -95px;
+    }
+    #column2-row3{
+        position: relative;
+        left: 0px;
+        top: -55px;
+    }
+    #column2-button {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
 }
 @media screen and (max-width: 375px) {
     #main-window {
         width: 375px;
+    }
+    #popper {
+        width: 215px;
     }
 }
 
