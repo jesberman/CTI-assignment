@@ -394,12 +394,54 @@
         right: 275px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 785px) {
     #main-window {
-        width: 768px;
+        width: 850px;
+    }
+    #sidebar {
+        width: 10px;
     }
     #popper-arrow{
         visibility: hidden;
+    }
+    #main-window {
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        padding: 15px;
+    }
+    #column1-row2 {
+        position: relative;
+        top: 0px;
+    }
+    #column1-row3 {
+        position: relative;
+        top: 0px;
+        border-bottom: 1px solid #707070;
+    }
+    #column1-button {
+        position: relative;
+        top: 20px;
+    }
+    #column2-row1 {
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    #column2-row2 {
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    #column2-row3 {
+        position: relative;
+        top: 0px;
+        right: 0px;
+    }
+    #column2-button {
+        position: relative;
+        top: 20px;
+        right: 0px;
     }
 }
 @media screen and (max-width: 425px) {
